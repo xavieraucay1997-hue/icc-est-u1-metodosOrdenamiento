@@ -1,9 +1,23 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         metodoBurbuja();
         MetodoBurbujaAvanzado(); 
+        runSeleccion(); 
 
     }
+    public static void runSeleccion() {
+        MetodoSeleccion mSeleccion = new MetodoSeleccion(); 
+        int[] arr = new int []{1,10,7,9,0,1,3,4}; 
+        mSeleccion.printArreglo(arr);
+        mSeleccion.sort(arr); 
+        mSeleccion.printArreglo(arr); 
+        mSeleccion.sortDes(arr); 
+        mSeleccion.printArreglo(arr); 
+
+    }
+
+
+
     public static void metodoBurbuja(){
         System.out.println("Metodo Burbuja");
         int[] arreglo = new int[]{10, -5,0,2,7};
